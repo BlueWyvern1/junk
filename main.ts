@@ -17,6 +17,9 @@ function makeEnemy() {
         . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . .
      `,SpriteKind.Enemy)
+    evilBurger.setVelocity(40, 60)   
+    evilBurger.setPosition(randint(0,160), 0)  
+    evilBurger.setBounceOnWall(true)
 }
 
 controller.left.onEvent(ControllerButtonEvent.Pressed, function() {
